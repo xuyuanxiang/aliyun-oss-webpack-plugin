@@ -13,6 +13,14 @@
     "aliyun",
     "oss"
   ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/xuyuanxiang/aliyun-oss-webpack-plugin.git"
+  },
+  "bugs": {
+    "url": "https://github.com/xuyuanxiang/aliyun-oss-webpack-plugin/issues"
+  },
+  "homepage": "https://github.com/xuyuanxiang/aliyun-oss-webpack-plugin",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "release":"npm publish --registry https://registry.npmjs.org/"
