@@ -1,7 +1,7 @@
 {
   "name": "aliyun-oss-webpack-plugin",
   "version": "1.0.0",
-  "description": "Aliyun OSS suports for shouqianba",
+  "description": "Aliyun OSS suports for webpack",
   "main": "index.js",
   "engines": {
     "node": ">=4"
