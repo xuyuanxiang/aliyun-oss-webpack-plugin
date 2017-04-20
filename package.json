@@ -1,0 +1,29 @@
+{
+  "name": "aliyun-oss-webpack-plugin",
+  "version": "1.0.0",
+  "description": "Aliyun OSS suports for shouqianba",
+  "main": "index.js",
+  "engines": {
+    "node": ">=4"
+  },
+  "license": "MIT",
+  "keywords": [
+    "webpack",
+    "plugin",
+    "aliyun",
+    "oss"
+  ],
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "xuyuanxiang <chaos@xuyuanxiang.cn> (http://xuyuanxiang.me)",
+  "dependencies": {
+    "ali-oss": "^4.7.1",
+    "async": "^2.1.4",
+    "co": "^4.6.0",
+    "lodash": "^4.14.45"
+  },
+  "peerDependencies": {
+    "webpack": "^2.0.0"
+  }
+}
