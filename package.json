@@ -14,7 +14,8 @@
     "oss"
   ],
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "release":"npm publish --registry https://registry.npmjs.org/"
   },
   "author": "xuyuanxiang <chaos@xuyuanxiang.cn> (http://xuyuanxiang.me)",
   "dependencies": {
