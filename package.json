@@ -1,6 +1,6 @@
 {
   "name": "aliyun-oss-webpack-plugin",
-  "version": "1.0.0",
+  "version": "2.0.1",
   "description": "Aliyun OSS suports for webpack",
   "main": "index.js",
   "engines": {
@@ -23,7 +23,7 @@
   "homepage": "https://github.com/xuyuanxiang/aliyun-oss-webpack-plugin",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "release":"npm publish --registry https://registry.npmjs.org/"
+    "release": "npm publish --registry https://registry.npmjs.org/"
   },
   "author": "xuyuanxiang <chaos@xuyuanxiang.cn> (http://xuyuanxiang.me)",
   "dependencies": {
@@ -33,6 +33,6 @@
     "lodash": "^4.14.45"
   },
   "peerDependencies": {
-    "webpack": "^2.0.0"
+    "webpack": "^2.0.0 || ^3.0.0"
   }
 }

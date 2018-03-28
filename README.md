@@ -26,7 +26,10 @@ module.exports = {
             accessKeyId: '*****',
             accessKeySecret: '*****',
             region: 'oss-cn-hangzhou',
-            bucket: '*****'
+            bucket: '*****',
+            headers: {
+              'Cache-Control': 'max-age=3600'
+            }
         })
         // 其他插件
     ]
