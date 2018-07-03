@@ -1,3 +1,5 @@
+put all bundles except HTML to your aliyun oss.
+
 # Installation
 
 webpack 4.x:
