@@ -1,7 +1,4 @@
-# aliyun-oss-webpack-plugin
-
-
-## 安装
+# Installation
 
 webpack 4.x:
 ```npm
@@ -13,18 +10,15 @@ webpack 2.x || 3.x:
 npm install aliyun-oss-webpack-plugin@"^2.0.1" --save
 ```
 
-## 使用
-
-`webpack`配置文件：
+## Configuration
 
 ```javascript
-var AliyunOSSPlugin = require("aliyun-oss-webpack-plugin");
+const AliyunOSSPlugin = require("aliyun-oss-webpack-plugin");
 module.exports = {
     output: {
-        publicPath: "https://domain.com/p/a/t/h" // 域名或域名+路径
+        publicPath: "https://domain.com/p/a/t/h" // !required
     },
     plugins: [
-        // 其他插件
         new AliyunOSSPlugin({
             accessKeyId: '*****',
             accessKeySecret: '*****',
@@ -34,7 +28,41 @@ module.exports = {
               'Cache-Control': 'max-age=3600'
             }
         })
-        // 其他插件
     ]
 }
+```
+
+## Example
+
+`webpack.config.js`:
+
+```js
+const path = require('path');
+const AliyunOSSPlugin = require("aliyun-oss-webpack-plugin");
+
+module.exports = {
+    entry: './src/index.js',
+    output: {
+        path: path.resolve(__dirname, './public'),
+        filename: 'index.js',
+        publicPath: 'https://my.static.assets.domain/my-project/1.0.0/',
+    },
+    plugins: [
+        new AliyunOSSPlugin({
+            accessKeyId: '*****',
+            accessKeySecret: '*****',
+            region: 'oss-cn-hangzhou',
+            bucket: '*****',
+            headers: {
+              'Cache-Control': 'max-age=3600',
+            },
+        })
+    ]
+}
+```
+
+`index.html`:
+
+```bash
+<script src="https://my.static.assets.domain/my-project/1.0.0/index.js"></script>
 ```
