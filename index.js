@@ -1,12 +1,11 @@
 /**
  * @module
  * @description
- * @version 1.0.0
+ * @version 3.0.0
  * @author xuyuanxiang
- * @date 2017/1/6
+ * @date 2018/7/3
  */
 var url = require('url');
-var fs = require('fs');
 var _ = require('lodash');
 var async = require('async');
 var createOSS = require('ali-oss');
@@ -35,7 +34,7 @@ function AliyunOSSPlugin (options) {
 }
 
 AliyunOSSPlugin.prototype.apply = function (compiler) {
-  compiler.plugin('emit', function (compilation, callback) {
+  compiler.hooks.emit.tapAsync('AliyunOSSPlugin', function (compilation, callback) {
     var publicPath = this.publicPath ? url.parse(this.publicPath) : url.parse(
       compiler.options.output.publicPath);
     if (!publicPath.protocol || !publicPath.hostname) {

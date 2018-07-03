@@ -1,13 +1,16 @@
 # aliyun-oss-webpack-plugin
 
-`webpack`插件，用于将静态资源打包上传阿里云OSS。
-
-上传失败则终止`webpack`构建流程，为解决现在市面上另一个同类型插件在Docker构建中，上传失败无感的问题。
 
 ## 安装
 
+webpack 4.x:
 ```npm
 npm install aliyun-oss-webpack-plugin --save
+```
+
+webpack 2.x || 3.x:
+```npm
+npm install aliyun-oss-webpack-plugin@"^2.0.1" --save
 ```
 
 ## 使用
